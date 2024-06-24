@@ -1,0 +1,12 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-random-post-block {
+	overflow: hidden;
+	min-height: fit-content;
+	a { pointer-events: none; }
+	img { max-width: 100%; width: 100%;}
+}

@@ -1,0 +1,67 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/random-post-block",
+	"version": "0.1.0",
+	"title": "Andiro Random Post",
+	"category": "andiro",
+	"icon": "randomize",
+	"description": "Simple random post block.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": {
+			"text": true,
+			"link": true,
+			"background": true
+		},
+		"dimensions": {
+			"aspectRatio": false,
+			"minHeight": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true, 
+			"blockGap": true 
+		},
+		"styles": [
+			{ "name": "default", "label": "Default", "isDefault": true },
+			{ "name": "other", "label": "Other" }
+		]
+	},
+	"attributes": {
+		"mediaSize": {
+			"type": "string",
+			"default": "full" 
+		},
+		"excerptLength": {
+			"type": "number",
+			"default": "150" 
+		},
+		"showImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"showExcerpt": {
+			"type": "boolean",
+			"default": true
+		},
+		"aspectRatio": {
+			"type": "string",
+			"default": "auto"
+		},
+		"scale": {
+			"type": "string",
+			"default": "cover"
+		},
+		"position": {
+			"type": "string",
+			"default": "center"
+		}
+	},
+	"textdomain": "andiro",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
